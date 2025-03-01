@@ -12,7 +12,10 @@ const texture = textureLoader.load(
   'https://threejs.org/examples/textures/disturb.jpg'
 );
 
+// scene
 const scene = new THREE.Scene();
+
+// camera
 const camera = new THREE.PerspectiveCamera(75, width / height);
 camera.position.z = 3;
 
@@ -24,6 +27,7 @@ gltfLoader.load('3d angel/scene.gltf', (gltf) => {
   scene.add(gltf.scene);
 });
 
+// floor
 const floor = new THREE.Mesh(
   new THREE.PlaneGeometry(10, 10),
   new THREE.MeshStandardMaterial({
@@ -49,6 +53,7 @@ renderer.setSize(width, height);
 
 const clock = new THREE.Clock();
 
+// run function every frame per second
 function tick() {
   const elapsedTime = clock.getElapsedTime();
 
