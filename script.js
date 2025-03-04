@@ -67,5 +67,3 @@ function tick() {
 }
 
 tick();
-
-console.log('update something');
