@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { ssrExportAllKey } from 'vite/module-runner';
 
 const [width, height] = [window.innerWidth, window.innerHeight];
 const canvas = document.getElementById('canvas');
@@ -67,5 +66,3 @@ function tick() {
 }
 
 tick();
-
-console.log('update something');
